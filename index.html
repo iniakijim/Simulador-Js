@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revista Caras</title>
-  </head>
-  <body>
-    <section>
-        <h1>Revista Caras</h1>
-        <img src="./imagenes/fotos-las-12-mejores-tapas-de-caras-del-2019-840145.jpg" alt="">
-    </section>
-  </body>
-  <script src="./miarchivo.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="simulador.css"> 
+    <script src="miarchivo.js"></script>
+</head>
+<body>
+    
+    <div id="divv">
+    <form id="myForm" onsubmit="return agregarDatos(event)">
+
+    <h2>Datos</h2><hr color="#bebebe"><br>
+        <p>Nombre
+            <input tipe="text" name="nombre" id = "nombre" maxlength="20" >
+        </p>
+        <p>Apellido
+            <input tipe="text" name="apellido" id="apellido" maxlength="25" >
+        </p>
+        <p>Edad
+            <input type="number" id="edad" min="18" max="120" name="edad" >
+        </p>
+        <p>DNI
+            <input type="text" id="dni" name="dni" minlength="" >  
+        </p>
+        <p>Email
+            <input type="email" id="email" name="email" >
+        </p><br><br>
+        <button id="boton" type="submit">Cargar</button>
+    </form>
+   </div> 
+   <div>
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>DNI</th>
+          <th>Correo electrónico</th>
+        </tr>
+        </thead>
+        <tbody id="tablaDatos">   
+        </tbody>
+        </table>
+    </div>
+</body>
+
+   
+</body>
 </html>
